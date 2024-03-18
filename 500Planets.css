@@ -1,0 +1,54 @@
+html,body {
+  font-family: Cairo;
+  background: black;
+}
+
+
+.day {
+  border: 1px solid gray;
+  border-radius: 10px;
+  background: black;
+}
+
+.horizon {
+  opacity: 0.5;
+}
+
+.horizon-circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(128,128,128,0.5);
+}
+.horizon-circle.noon {
+  width:5px;
+  height: 5px;
+}
+
+.heavenly-body {
+  transform: translate(-50%, -50%);
+}
+
+.heavenly-body.Sun {
+  filter: drop-shadow(0px 0px 2px #FDB813) drop-shadow(0px 0px 2px #FDB813);
+}
+
+.heavenly-body.Moon {
+  filter: drop-shadow(0px 0px 2px silver) drop-shadow(0px 0px 2px silver);
+}
+
+.sun-rise-set-times {
+  font-family: Cairo;
+    color: white;
+}
+.sun-rise-set-times .label {
+    color: #ccc;
+    text-align: right;
+    display: inline-block;
+    width: 60px;
+}
+.sun-rise-set-times .time {
+    text-align: right;
+}
